@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>木姿官方网站</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/fullpage.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="item active" href="#banner/1">
+                首页
+            </a>
+            <a class="item">
+                介绍
+            </a>
+        </nav>
+    </header>
+    <div id="fullpage">
+        <div class="banner section" data-anchor="banner">
+            <div class="container">
+                <div class="left">
+                    <img src="./images/people.png" class="people" alt="">
+                    <div class="line"></div>
+                    <div>
+                        <div class="vertical-line top"></div>
+                        <div class="vertical-line bottom"></div>
+                        <div class="vertical-line top"></div>
+                    </div>
+                    <div class="border"></div>
+                </div>
+                <div class="description">
+                    COLLECTION BRAND OF GIRL'S DRESS
+                </div>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                    <p>
+                        女性服饰集合品牌
+                    </p>
+                </div>
+                <div class="text">ELEGANT LIFE</div>
+            </div>
+        </div>
+        <div class="section active">
+            <div class="container">
+                asd
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src=" ./script/fullpage.min.js"> </script>
+<script src="./script/fullpage.extensions.min.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        //options here
+        menu: 'nav',
+        css3: true,
+        controlArrows: true,
+        scrollHorizontally: true,
+    });
+
+    ScrollReveal().reveal('.description', {
+        duration: 2000,
+    });
+    ScrollReveal({
+        distance: '100px',
+        easing: 'ease-out'
+    });
+    ScrollReveal().reveal('.logo', {
+        origin: 'right'
+    });
+    ScrollReveal().reveal('.people', {
+        duration: 800,
+        origin: 'left'
+    });
+    ScrollReveal().reveal('.line', {
+        delay: 600,
+        duration: 2000,
+        distance: '300px',
+        origin: 'left',
+        easing: 'ease'
+    });
+    ScrollReveal().reveal('.vertical-line.top', {
+        distance: '400px',
+        delay: 300,
+        duration: 3000,
+        origin: 'bottom',
+    });
+    ScrollReveal().reveal('.vertical-line.bottom', {
+        distance: '400px',
+        duration: 1000,
+        delay: 800,
+        origin: 'top'
+    });
+</script>
+
+</html>
