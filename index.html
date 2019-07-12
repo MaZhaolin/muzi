@@ -13,11 +13,14 @@
 <body>
     <header>
         <nav>
-            <a class="item active" href="#banner/1">
+            <a class="item active" data-menuanchor="banner" href="#banner">
                 首页
             </a>
-            <a class="item">
+            <a class="item" data-menuanchor="intro" href="#intro">
                 介绍
+            </a>
+            <a class="item" data-menuanchor="intro" href="#intro">
+                加盟店
             </a>
         </nav>
     </header>
@@ -46,7 +49,7 @@
                 <div class="text">ELEGANT LIFE</div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" data-anchor="intro">
             <div class="container">
                 asd
             </div>
@@ -56,48 +59,6 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src=" ./script/fullpage.min.js"> </script>
 <script src="./script/fullpage.extensions.min.js"></script>
-<script>
-    new fullpage('#fullpage', {
-        //options here
-        menu: 'nav',
-        css3: true,
-        controlArrows: true,
-        scrollHorizontally: true,
-    });
-
-    ScrollReveal().reveal('.description', {
-        duration: 2000,
-    });
-    ScrollReveal({
-        distance: '100px',
-        easing: 'ease-out'
-    });
-    ScrollReveal().reveal('.logo', {
-        origin: 'right'
-    });
-    ScrollReveal().reveal('.people', {
-        duration: 800,
-        origin: 'left'
-    });
-    ScrollReveal().reveal('.line', {
-        delay: 600,
-        duration: 2000,
-        distance: '300px',
-        origin: 'left',
-        easing: 'ease'
-    });
-    ScrollReveal().reveal('.vertical-line.top', {
-        distance: '400px',
-        delay: 300,
-        duration: 3000,
-        origin: 'bottom',
-    });
-    ScrollReveal().reveal('.vertical-line.bottom', {
-        distance: '400px',
-        duration: 1000,
-        delay: 800,
-        origin: 'top'
-    });
-</script>
+<script src="./script/index.js"></script>
 
 </html>
